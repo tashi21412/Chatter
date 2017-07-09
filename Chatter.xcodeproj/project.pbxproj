@@ -13,6 +13,10 @@
 		9EE8DD4F1F12A19C006B9EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8DD4D1F12A19C006B9EDF /* Main.storyboard */; };
 		9EE8DD511F12A19C006B9EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8DD501F12A19C006B9EDF /* Assets.xcassets */; };
 		9EE8DD541F12A19C006B9EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8DD521F12A19C006B9EDF /* LaunchScreen.storyboard */; };
+		9EE8DD5C1F12A729006B9EDF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8DD5B1F12A729006B9EDF /* Post.swift */; };
+		9EE8DD5E1F12A7C4006B9EDF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8DD5D1F12A7C4006B9EDF /* SampleData.swift */; };
+		9EE8DD601F12B214006B9EDF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8DD5F1F12B214006B9EDF /* PostCell.swift */; };
+		9EE8DD621F12D5F6006B9EDF /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8DD611F12D5F6006B9EDF /* NewPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9EE8DD501F12A19C006B9EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EE8DD531F12A19C006B9EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EE8DD551F12A19D006B9EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EE8DD5B1F12A729006B9EDF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9EE8DD5D1F12A7C4006B9EDF /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		9EE8DD5F1F12B214006B9EDF /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		9EE8DD611F12D5F6006B9EDF /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				9EE8DD471F12A19C006B9EDF /* AppDelegate.swift */,
 				9EE8DD491F12A19C006B9EDF /* MasterViewController.swift */,
 				9EE8DD4B1F12A19C006B9EDF /* DetailViewController.swift */,
+				9EE8DD611F12D5F6006B9EDF /* NewPostViewController.swift */,
 				9EE8DD4D1F12A19C006B9EDF /* Main.storyboard */,
+				9EE8DD5F1F12B214006B9EDF /* PostCell.swift */,
+				9EE8DD5B1F12A729006B9EDF /* Post.swift */,
+				9EE8DD5D1F12A7C4006B9EDF /* SampleData.swift */,
 				9EE8DD501F12A19C006B9EDF /* Assets.xcassets */,
 				9EE8DD521F12A19C006B9EDF /* LaunchScreen.storyboard */,
 				9EE8DD551F12A19D006B9EDF /* Info.plist */,
@@ -143,6 +155,10 @@
 				9EE8DD4C1F12A19C006B9EDF /* DetailViewController.swift in Sources */,
 				9EE8DD4A1F12A19C006B9EDF /* MasterViewController.swift in Sources */,
 				9EE8DD481F12A19C006B9EDF /* AppDelegate.swift in Sources */,
+				9EE8DD621F12D5F6006B9EDF /* NewPostViewController.swift in Sources */,
+				9EE8DD5E1F12A7C4006B9EDF /* SampleData.swift in Sources */,
+				9EE8DD5C1F12A729006B9EDF /* Post.swift in Sources */,
+				9EE8DD601F12B214006B9EDF /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +283,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8FC9PW965D;
 				INFOPLIST_FILE = Chatter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tash.Chatter.Chatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -280,10 +298,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8FC9PW965D;
 				INFOPLIST_FILE = Chatter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tash.Chatter.Chatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

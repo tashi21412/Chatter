@@ -12,14 +12,16 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
+    @IBOutlet weak var detailUserNameLabel: UILabel!
+    @IBOutlet weak var detailDateLabel: UILabel!
 
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        var post = detailItem! as Post
+
+        detailDateLabel?.text = DateFormatter.localizedString(from: post.date as Date, dateStyle: .short, timeStyle: .short)
+        detailUserNameLabel?.text = post.userName
+        detailDescriptionLabel?.text = post.text
+        
     }
 
     override func viewDidLoad() {
@@ -33,7 +35,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Post? {
         didSet {
             // Update the view.
             self.configureView()
